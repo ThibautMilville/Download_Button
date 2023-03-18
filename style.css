@@ -16,7 +16,12 @@
     background: #7d2ae8;
     border-radius: 55px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+/* .button.active {
+    height: 20px;
+    width: 500px;
+} */
 .button::before {
     content: '';
     position: absolute;
@@ -26,6 +31,14 @@
     width: 100%;
     border-radius: 55px;
     background: #5b13b9;
+}
+.button.active::before {
+    animation: layer 6s ease-in-out forwards;
+}
+@keyframes layer {
+    100% {
+        left: 0%;
+    }
 }
 .button .content {
     height: 100%;
