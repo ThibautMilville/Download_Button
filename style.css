@@ -17,11 +17,12 @@
     border-radius: 55px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
 }
-/* .button.active {
+.button.active {
     height: 20px;
     width: 500px;
-} */
+}
 .button::before {
     content: '';
     position: absolute;
@@ -46,9 +47,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+}
+.button.active .content {
+    transform: translateY(60px);
 }
 .content i, .content .button-text {
-    color: #FFF;
+    color: #000;
     font-size: 40px;
     font-weight: 500;
 
