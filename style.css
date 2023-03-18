@@ -18,6 +18,7 @@
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     cursor: pointer;
+    overflow: hidden;
 }
 .button.active {
     height: 20px;
@@ -34,7 +35,7 @@
     background: #5b13b9;
 }
 .button.active::before {
-    animation: layer 6s ease-in-out forwards;
+    animation: layer 4s ease-in-out forwards;
 }
 @keyframes layer {
     100% {
@@ -54,7 +55,7 @@
     transform: translateY(60px);
 }
 .content i, .content .button-text {
-    color: #000;
+    color: #FFF;
     font-size: 40px;
     font-weight: 500;
 
